@@ -9,7 +9,7 @@ y = input ("Enter a contry ")
 new_adress = cities(x, y)
 print (new_adress)
 
-user1 = create_record ("andrej", "0675930219", "Zamkova")
+user1 = create_record ("andrej", "131313131", "Kiev")
 print (user1)
 
 
