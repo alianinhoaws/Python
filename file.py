@@ -1,19 +1,22 @@
 
+import sys
 
-#inputfile = "../"
+inputfile = "myfile.txt"
 #outputfile = "../"
-
-frase_toLook = "anything"
-
-myfile1 = open (inputfile, mode = 'r', encoding = 'latin_1')
-myfile2 = open (outputfile, mode = 'a', encoding = 'latin_1')
-
-for num,line in enumerate (myfile1,1):
-    if frase_toLook in line:
-        print ("Line N: "+ str (num) + line.strip())
-        myfile2.write ("Found " + line)
-    """if find (anything) print it and write to file2 with appending (mode = 'a')"""
-
-myfile1.close()
-myfile2.close()
-"""close all files"""
+while True:
+    try:
+        """start of interception errors"""
+        print ("INSIDE TRY")
+        myfile = open (inputfile, mode = 'r', encoding = 'Latin_1')
+    except Exception:
+        """if find errror"""
+        print ("Inside EXCEPT")
+        print ("find an error")
+        print (sys.exc_info() [1])
+        """print sys information about error"""
+        inputfile = input ("enter correct file name")
+        sys.exit
+    else:
+        """if everithing ok""""
+        print (inputfile.read())
+        sys.exit
