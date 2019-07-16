@@ -14,7 +14,7 @@ class Hero ():
         self.level += 1
 
     def move (self):
-        print ("Hero" + self.name + "Are moving")
+        print ("Hero " + self.name + " Are moving")
 
     def set_health (self, new_health):
         self.health = new_health

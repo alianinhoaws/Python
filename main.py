@@ -24,3 +24,4 @@ newcar.read_odometer()
 
 newElectroCar = Electrocar ('X', 'Tesla', 2018)
 newElectroCar.describe_name()
+newElectroCar.describe_battery()

@@ -30,4 +30,14 @@ class Car ():
 class Electrocar(Car):
     def __init__(self,version,model,year):
         super().__init__(version,model,year)
+        self.battery_size = 70
 
+    def describe_battery (self):
+        print ("This car battery has a " + str (self.battery_size) + " size")
+
+    def get_range (self):
+        if self.battery_size == 70:
+            range = 240
+        elif self.battery_size == 85:
+            range 270
+    
