@@ -29,6 +29,6 @@ class SuperHerro (Hero):
         self.__magic -= 10
         
     def show_hero (self):
-        description = ("Name " + self.name + "Level " + str(self.level) + "Race " + self.race + "Health " + str(self.health) + "Magic: " + str(self.__magic)).title()
+        description = ("Name " + self.name + " Level " + str(self.level) + " Race " + self.race + " Health " + str(self.health) + " Magic: " + str(self.__magic)).title()
         print(description)
                 
