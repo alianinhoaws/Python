@@ -17,6 +17,6 @@ while True:
         inputfile = input ("enter correct file name")
         sys.exit
     else:
-        """if everithing ok""""
+        """if everithing ok"""
         print (inputfile.read())
         sys.exit

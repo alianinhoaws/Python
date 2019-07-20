@@ -1,5 +1,5 @@
-from classHero import *
 from classauto import *
+from classHero import *
 myhero = Hero ("Warlock", 5, "Undead")
 myhero.show_hero ()
 myhero.level_up()
@@ -12,7 +12,6 @@ mysuperherro = SuperHerro ("Mage", 5 , "Night elf", 100)
 mysuperherro.show_hero ()
 mysuperherro.makemagic ()
 mysuperherro.show_hero ()
-
 
 newcar = Car ('A4', 'Audi', 1997)
 newcar.describe_name()

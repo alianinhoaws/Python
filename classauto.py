@@ -39,5 +39,5 @@ class Electrocar(Car):
         if self.battery_size == 70:
             range = 240
         elif self.battery_size == 85:
-            range 270
+            range = 270
     
