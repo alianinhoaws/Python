@@ -15,7 +15,7 @@ while True:
         print (sys.exc_info() [1])
         """print sys information about error"""
         inputfile = input ("enter correct file name")
-        sys.exit
+        sys.exit(2)
     else:
         """if everithing ok"""
         print (inputfile.read())
